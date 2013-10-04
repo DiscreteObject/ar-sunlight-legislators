@@ -8,5 +8,10 @@ class Congressperson < ActiveRecord::Base
 
   end
 
+  def to_pp
+    "  #{self.title} #{self.firstname} #{self.lastname}, #{self.party}-#{self.state}-#{self.district.to_s}"
+
+  end
+
 
 end
